@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script src="https://kit.fontawesome.com/63d2117d14.js" crossorigin="anonymous"></script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="stylesheet.css" type="text/css" />
+
+    <script src="https://use.fontawesome.com/3853a9854d.js"></script>
+
+    <meta name="Keywords" content="sakvanZo sityvebi" />
+
+    <meta name="Description" content="aRwera" />
+
+    <link rel="shortcut icon" type="image/png" href="img/coffee.png">
+
+    <title>Coffee is Life</title>
+</head>
+
+<body>
+<!-- menu -->
+	<header class="menubar">
+		<div><a href="style.html">Coffee</a></div>
+			<nav>
+				<ul id="menuitems">
+					<li><a href="style.html">HOME</a></li>
+					<li><a href="coffees.html">COFFEES</a></li>
+					<li><a href="pastry.html">PASTRIES</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="aboutUs.html">ABOUT US</a></li>
+				</ul>
+			</nav>
+	</header>
+<!-- menu end -->
+	
+
+<!-- tab pannel -->
+<div class="tab-pannels">
+	<ul class="tabs">
+		<li rel="pan1">img</li>
+		<li rel="pan2">img</li>
+		<li rel="pan3">img</li>
+	</ul>
+	<div id="pan1" class="panel" style="display: none;">
+		<img src="img/10.jpg" alt="">
+	</div>
+
+	<div id="pan2" class="panel" style="display: none;">
+		<img src="img/11.jpg" alt="">
+	</div>
+
+	<div id="pan3" class="panel active" style="display: block;">
+		<img src="img/12.jpg" alt="">
+	</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+		$('.tab-pannels .tabs li').on('click',function(){
+			//which pannel to show
+			var pts = $(this).attr('rel');
+			
+
+			//hide current pannel
+			$('.tab-pannels .panel.active').slideUp(500,function(){
+				$(this).removeClass('active');
+
+				//show the appointed pannel
+			$('#'+pts).slideDown(500,function(){
+				$(this).addClass('active');
+
+			});
+		});
+			
+
+	});
+	});
+</script>
+
+<!-- tab pannel end -->
+
+
+<!-- footer icons start -->
+	<footer class="icons_for_footer">
+		<a class="ikonn" href="#"><i class="fab fa-instagram"></i></a>
+		<a class="ikonn" href="#"><i class="fab fa-facebook"></i></a>
+		<a class="ikonn" href="#"><i class="fab fa-telegram"></i></a>
+	</footer>
+<!-- footer icons end -->
+
+</body>
+</html>

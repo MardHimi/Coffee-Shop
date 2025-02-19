@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://use.fontawesome.com/3853a9854d.js"></script>
+
+    <meta name="Keywords" content="sakvanZo sityvebi" />
+
+    <meta name="Description" content="aRwera" />
+
+    <link rel="shortcut icon" type="image/png" href="img/coffee.png">
+
+	<link rel="stylesheet" href="about.css" type="text/css" />
+
+	<script src="myscripts.js"></script>
+
+	<title> About Coffee </title>
+</head>
+<body>
+	<!-- header -->
+	<header class="menubar">
+		<div><a href="style.html">Coffee</a></div>
+		<nav>
+			<ul id="menuitems">
+				<li><a href="style.html">HOME</a></li>
+				<li><a href="coffees.html">COFFEES</a></li>
+				<li><a href="pastry.html">PASTRIES</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="aboutUs.html">ABOUT US</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- header end -->
+
+
+	<!-- container text -->
+		<div class="textcontainer">
+			<h1>About Us</h1>
+		<p>Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species. All fruit must be further processed from a raw material—the fruit and seed—into a stable, raw product; un-roasted, green coffee. To process the berries, the seed is separated from the fruit to produce green coffee. Green coffee is then roasted, a process which transforms the raw product (green coffee) into a consumable product (roasted coffee). Roasted coffee is ground into a powder and mixed with water to produce a cup of coffee. 
+			<span id="dots"> ... </span><span id="readML">Coffee is darkly colored, bitter, slightly acidic and has a stimulating effect in humans, primarily due to its caffeine content.[3] It is one of the most popular drinks in the world,[4] and can be prepared and presented in a variety of ways (e.g., espresso, French press, caffè latte, or already-brewed canned coffee). It is usually served hot, although chilled or iced coffee is common. Sugar, sugar substitutes, milk or cream are often used to lessen the bitter taste. It may be served with coffee cake or another sweet dessert like doughnuts. A commercial establishment that sells prepared coffee beverages is known as a coffee shop (not to be confused with Dutch coffeeshops selling cannabis). 
+		Clinical research indicates that moderate coffee consumption is benign or mildly beneficial as a stimulant in healthy adults, with continuing research on whether long-term consumption reduces the risk of some diseases, although some of the long-term studies are of questionable credibility.</span></p>
+		<button type="button" id="read" onclick="read()"> Read More </button>
+	</div>
+
+	<script type="text/javascript">
+		var i=0;
+		function read(){
+			if (!i){
+				document.getElementById('readML').style.display="inline";
+				document.getElementById('dots').style.display="none";
+				document.getElementById('read').innerHTML="Read Less";
+				i=1;
+			}
+			else{
+				document.getElementById('readML').style.display="none";
+				document.getElementById('dots').style.display="inline";
+				document.getElementById('read').innerHTML="Read More";
+				i=0;
+			}
+		}
+	</script>
+	<!-- container text end -->
+</body>
+</html>
